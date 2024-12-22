@@ -3,6 +3,9 @@
  * Do not include SCSS code in this file.
  */
 
+@tailwind base;
+@tailwind components;
+
 /**
  * Import variables
  */
@@ -24,6 +27,8 @@
  */
 
 @import "layouts/home";
+
+@tailwind utilities;
 
 /**
  * Do NOT include anything else in this file!
