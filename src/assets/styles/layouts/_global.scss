@@ -36,21 +36,6 @@
   container-type: inline-size;
 }
 
-@layer utilities {
-  @supports (display: grid) {
-    .supports-display-grid {
-      @apply text-center grid grid-cols-1;
-    }
-
-    .supports-display-grid {
-      grid-template-areas:
-        "image"
-        "content"
-        "cta";
-    }
-  }
-}
-
 @layer components {
   .btn {
     @apply inline-block text-center align-middle cursor-pointer
@@ -71,16 +56,4 @@
            disabled:text-black disabled:bg-secondary disabled:border-secondary
            active:text-black active:bg-[#e6d9fd] active:border-[#e3d4fc];
   }
-}
-
-.grid-area-image {
-  grid-area: image;
-}
-
-.grid-area-content {
-  grid-area: content;
-}
-
-.grid-area-cta {
-  grid-area: cta;
 }

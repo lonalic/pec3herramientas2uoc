@@ -18,8 +18,8 @@
 
     <main class="flex flex-col flex-1">
       <section class="text-light bg-primary p-4 inline-size">
-        <div class="flex flex-col align-center gap-4 supports-display-grid">
-          <div class="grid-area-image">
+        <div class="flex flex-col align-center gap-4 supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:text-center md:supports-[display:grid]:grid-cols-[2fr_1fr] supports-[display:grid]:[grid-template-areas:'image''content''cta'] md:supports-[display:grid]:[grid-template-areas:'image_content''image_cta']">
+          <div class="[grid-area:image]">
             <figure class="pt-0 pr-0 pb-4 pl-0">
               <img
                 class="rounded-lg w-full h-auto"
@@ -30,7 +30,7 @@
               </figcaption>
             </figure>
           </div>
-          <div class="grid-area-content p-4">
+          <div class="[grid-area:content] p-4">
             <h1 class="">Jornadas de Seguridad Informática</h1>
             <p class="">
               Apúntate a las jornadas de seguridad más importantes del año.
@@ -38,7 +38,7 @@
               del sector.
             </p>
           </div>
-          <div class="flex flex-col justify-center gap-2 grid-area-cta">
+          <div class="flex flex-col md:flex-row justify-center gap-2 [grid-area:cta]">
             <a href="./index.html">
               <button class="btn btn-primary">Mira los conferenciantes</button>
             </a>
