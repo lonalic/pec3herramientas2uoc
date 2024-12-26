@@ -1,9 +1,9 @@
 <header
-  class="flex md:flex-row md:justify-between flex-col gap-4 p-4 items-center bg-primary text-secondary">
+  class="flex md:flex-row md:justify-between flex-col gap-4 p-4 items-center {{ textColor }} {{ bgColor }}">
   <div class="text-center font-bold font-lato text-2xl/9">
     <a
       href="index.html"
-      class="text-light hover:text-secondary hover:underline transition-colors duration-300">
+      class="{{ link }}">
       Jornadas de Seguridad
     </a>
   </div>
@@ -13,15 +13,15 @@
       <li>
         <a
           href="index.html"
-          class="text-light hover:text-secondary hover:underline transition-colors duration-300">
+          class="{{ link }}">
           Home
         </a>
       </li>
       <li>
         <a
           href="speakers.html"
-          class="text-light hover:text-secondary hover:underline transition-colors duration-300">
-          Speakers
+          class="{{ link }}">
+          Conferenciantes
         </a>
       </li>
     </ul>

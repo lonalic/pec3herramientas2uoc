@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        'sm': '576px'
+      },
       colors: {
         // Taken from https://getbootstrap.com/docs/5.0/customize/color/
         primary: "#8540f5",

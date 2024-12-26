@@ -14,7 +14,11 @@
   </head>
   <body
     class="font-sans flex flex-col bg-quaternary text-tertiary min-h-screen text-base font-normal m-0 text-start">
-    <include src="./views/header.html"></include>
+    <include src="./views/header.html" locals='{
+      "bgColor": "bg-primary",
+      "textColor": "text-secondary",
+      "link": "link-light"
+  }'></include>
 
     <main class="flex flex-col flex-1">
       <section class="text-light bg-primary p-4 @container">

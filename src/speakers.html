@@ -12,89 +12,93 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="./assets/styles/main.scss" />
   </head>
-  <body class="main">
-    <include src="./views/header.html"></include>
-    <main class="speakers">
+  <body class="text-tertiary bg-quaternary">
+    <include src="./views/header.html" locals='{
+        "bgColor": "bg-quaternary",
+        "textColor": "text-tertiary",
+        "link": "link-green"
+    }'></include>
+    <main class="flex-1 p-4 @container">
       <section class="">
         <div class="alert alert-warning" role="alert">
           ¡Además de los conferenciantes que aparecen en la lista, tenemos
           preparadas algunas sorpresas!
         </div>
       </section>
-      <section class="">
-        <h1 class="">Conferenciantes</h1>
-        <ul class="">
-          <li class="">
+      <section class="flex flex-col items-center">
+        <h1 class="align-center mb-5 text-tertiary">Conferenciantes</h1>
+        <ul class="flex flex-wrap justify-center gap-4 list-none w-[97%] @[600px]:justify-evenly">
+          <li class="card">
             <img
-              class=""
+              class="image-card"
               src="./assets/images/personas/woman1.jpg"
               alt="Conferencista Salma Hilton" />
-            <h3 class="">Salma Hilton</h3>
-            <p class="">Hacker blanco</p>
+            <h3 class="title-card">Salma Hilton</h3>
+            <p class="subtitle-card">Hacker blanco</p>
           </li>
-          <li class="">
+          <li class="card">
             <img
-              class=""
+              class="image-card"
               src="./assets/images/personas/woman2.jpg"
               alt="Conferencista Elena Brown" />
-            <h3 class="">Elena Brown</h3>
-            <p class="">
+            <h3 class="title-card">Elena Brown</h3>
+            <p class="subtitle-card">
               Experta en hacking avanzado
             </p>
           </li>
-          <li class="">
+          <li class="card">
             <img
-              class=""
+              class="image-card"
               src="./assets/images/personas/woman3.jpg"
               alt="Conferencista Elena Brown" />
-            <h3 class="">Amna Tilley</h3>
-            <p class="">
+            <h3 class="title-card">Amna Tilley</h3>
+            <p class="subtitle-card">
               Experta en programación segura
             </p>
           </li>
-          <li class="">
+          <li class="card">
             <img
-              class=""
+              class="image-card"
               src="./assets/images/personas/woman4.jpg"
               alt="Conferencista Elena Brown" />
-            <h3 class="">Jerome Iperu</h3>
-            <p class="">Experta en redes seguras</p>
+            <h3 class="title-card">Jerome Iperu</h3>
+            <p class="subtitle-card">Experta en redes seguras</p>
           </li>
-          <li class="">
+          <li class="card">
             <img
-              class=""
+              class="image-card"
               src="./assets/images/personas/woman5.jpg"
               alt="Conferencista Elena Brown" />
-            <h3 class="">Trista Vekor</h3>
-            <p class="">Experta en IA y seguridad</p>
+            <h3 class="title-card">Trista Vekor</h3>
+            <p class="subtitle-card">Experta en IA y seguridad</p>
           </li>
-          <li class="">
+          <li class="card">
             <img
-              class=""
+              class="image-card"
               src="./assets/images/personas/man2.jpg"
               alt="Conferencista Elena Brown" />
-            <h3 class="">Jack Sparrow</h3>
-            <p class="">
+            <h3 class="title-card">Jack Sparrow</h3>
+            <p class="subtitle-card">
               Experto en sistemas de seguridad
             </p>
           </li>
-          <li class="">
+          <li class="card">
             <img
-              class=""
+              class="image-card"
               src="./assets/images/personas/woman6.jpg"
               alt="Conferencista Elena Brown" />
-            <h3 class="">Elena Brown</h3>
-            <p class="">
+            <h3 class="title-card">Elena Brown</h3>
+            <p class="subtitle-card">
               Experta en herramientas de seguridad
             </p>
           </li>
-          <li class="">
+          <li class="card">
             <img
-              class=""
+              class="image-card"
               src="./assets/images/personas/man1.jpg"
               alt="Conferencista Elena Brown" />
-            <h3 class="">Elena Brown</h3>
-            <p class="">Experto en hackers éticos</p>
+            <h3 class="title-card">Elena Brown</h3>
+            <p class="subtitle-card">Experto en hackers éticos</p>
           </li>
         </ul>
       </section>

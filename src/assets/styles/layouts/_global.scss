@@ -4,7 +4,7 @@
   }
   img,
   svg {
-    vertical-align: middle;
+    @apply align-middle;
   }
 
   h1 {
@@ -27,13 +27,37 @@
   p {
     @apply mt-0 mb-4;
   }
-  a {
-    // Creo que no se aplica a nada realmente
-    // @apply underline;
+  ul {
+    @apply pt-0 mb-4 pl-8;
+  }
+  .link-light {
+    @apply text-light hover:text-secondary hover:underline transition-colors duration-300;
+  }
+  .link-green {
+    @apply text-tertiary-dark hover:text-tertiary hover:underline transition-colors duration-300;
   }
 }
 
 @layer components {
+  .card {
+    @apply text-center bg-light border border-tertiary rounded-lg w-[85%] p-[1.75rem] transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105;
+    // Breakpoint: sm
+    @screen sm {
+      @apply w-[200] p-4;
+    }
+  }
+  .image-card {
+    @apply inline object-cover rounded-full mb-4 w-[200] h-[200] text-center;
+    @screen sm {
+      @apply w-[140] h-[140];
+    }
+  }
+  .title-card {
+    @apply my-2 text-2xl font-bold text-tertiary;
+  }
+  .subtitle-card {
+    @apply text-sm text-tertiary-dark;
+  }
   .btn {
     @apply inline-block text-center align-middle cursor-pointer
            select-none border border-transparent rounded-md
