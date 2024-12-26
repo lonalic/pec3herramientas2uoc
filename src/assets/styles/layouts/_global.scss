@@ -53,4 +53,12 @@
            disabled:text-black disabled:bg-secondary disabled:border-secondary
            active:text-black active:bg-[#e6d9fd] active:border-[#e3d4fc];
   }
+
+  .alert {
+    @apply bg-transparent relative px-4 py-14 mb-4 border border-[#ffe69c] rounded-md text-[#664d03] bg-[#fff3cd];
+  }
+
+  .alert-warning {
+    @apply text-[#664d03] bg-[#fff3cd] border-[#ffe69c];
+  }
 }
