@@ -17,7 +17,7 @@
     <include src="./views/header_index.html"></include>
 
     <main class="flex flex-col flex-1">
-      <section class="text-light bg-primary p-4 inline-size">
+      <section class="text-light bg-primary p-4 @container">
         <div class="flex flex-col align-center gap-4 supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:text-center md:supports-[display:grid]:grid-cols-[2fr_1fr] supports-[display:grid]:[grid-template-areas:'image''content''cta'] md:supports-[display:grid]:[grid-template-areas:'image_content''image_cta']">
           <div class="[grid-area:image]">
             <figure class="pt-0 pr-0 pb-4 pl-0">
@@ -25,7 +25,7 @@
                 class="rounded-lg w-full h-auto"
                 src="./assets/images/poster.avif"
                 alt="Imagen representativa de seguridad informática" />
-              <figcaption class="text-base text-light translate-y-[-150%]">
+              <figcaption class="text-base text-light translate-y-[-150%] @[576px]:translate-y-[0]">
                 © Unsplash
               </figcaption>
             </figure>
