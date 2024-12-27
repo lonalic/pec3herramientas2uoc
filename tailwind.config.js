@@ -20,7 +20,6 @@ module.exports = {
         info: "#3dd5f3",
         light: "#f8f9fa",
         dark: "#f8f9fa",
-        base: "#495057",
         "light-dark": "#e9ecef",
       },
       fontFamily: {

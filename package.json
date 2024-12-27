@@ -9,7 +9,8 @@
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
-    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
+    "copy-fonts": "cp -R node_modules/@fortawesome/fontawesome-free/webfonts src/assets/webfonts"
   },
   "targets": {
     "web": {
@@ -47,6 +48,7 @@
     "tailwindcss": "^3.4.17"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "@tailwindcss/container-queries": "^0.1.1"
   }
 }

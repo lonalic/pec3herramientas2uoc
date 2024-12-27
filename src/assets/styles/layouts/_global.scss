@@ -41,7 +41,6 @@
 @layer components {
   .card {
     @apply text-center bg-light border border-tertiary rounded-lg w-[85%] p-[1.75rem] transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105;
-    // Breakpoint: sm
     @screen sm {
       @apply w-[200] p-4;
     }
