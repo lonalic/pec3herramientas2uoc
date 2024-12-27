@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="./assets/styles/main.scss" />
   </head>
   <body class="text-tertiary bg-quaternary">
-    <include src="./views/header.html" locals='{
+    <include
+      src="./views/header.html"
+      locals='{
         "bgColor": "bg-quaternary",
         "textColor": "text-tertiary",
         "link": "link-green"
@@ -27,7 +29,8 @@
       </section>
       <section class="flex flex-col items-center">
         <h1 class="align-center mb-5 text-tertiary">Conferenciantes</h1>
-        <ul class="flex flex-wrap justify-center gap-4 list-none w-[97%] @[600px]:justify-evenly">
+        <ul
+          class="flex flex-wrap justify-center gap-4 list-none w-[97%] @[600px]:justify-evenly">
           <li class="card">
             <img
               class="image-card"
@@ -42,9 +45,7 @@
               src="./assets/images/personas/woman2.jpg"
               alt="Conferencista Elena Brown" />
             <h3 class="title-card">Elena Brown</h3>
-            <p class="subtitle-card">
-              Experta en hacking avanzado
-            </p>
+            <p class="subtitle-card">Experta en hacking avanzado</p>
           </li>
           <li class="card">
             <img
@@ -52,9 +53,7 @@
               src="./assets/images/personas/woman3.jpg"
               alt="Conferencista Elena Brown" />
             <h3 class="title-card">Amna Tilley</h3>
-            <p class="subtitle-card">
-              Experta en programación segura
-            </p>
+            <p class="subtitle-card">Experta en programación segura</p>
           </li>
           <li class="card">
             <img
@@ -78,9 +77,7 @@
               src="./assets/images/personas/man2.jpg"
               alt="Conferencista Elena Brown" />
             <h3 class="title-card">Jack Sparrow</h3>
-            <p class="subtitle-card">
-              Experto en sistemas de seguridad
-            </p>
+            <p class="subtitle-card">Experto en sistemas de seguridad</p>
           </li>
           <li class="card">
             <img
@@ -88,9 +85,7 @@
               src="./assets/images/personas/woman6.jpg"
               alt="Conferencista Elena Brown" />
             <h3 class="title-card">Elena Brown</h3>
-            <p class="subtitle-card">
-              Experta en herramientas de seguridad
-            </p>
+            <p class="subtitle-card">Experta en herramientas de seguridad</p>
           </li>
           <li class="card">
             <img
@@ -104,7 +99,9 @@
       </section>
     </main>
 
-    <include src="./views/footer.html" locals='{
+    <include
+      src="./views/footer.html"
+      locals='{
         "bgColor": "bg-tertiary/10",
         "textColor": "text-tertiary",
         "link": "link-green"
