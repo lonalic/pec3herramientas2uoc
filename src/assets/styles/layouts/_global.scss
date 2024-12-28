@@ -1,0 +1,87 @@
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  img,
+  svg {
+    @apply align-middle;
+  }
+
+  h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  h6,
+  .h6,
+  h5,
+  .h5,
+  h4,
+  .h4,
+  h3,
+  .h3,
+  h2,
+  .h2,
+  h1,
+  .h1 {
+    @apply mt-0 mb-2 font-medium leading-tight text-dark;
+  }
+  p {
+    @apply mt-0 mb-4;
+  }
+  ul {
+    @apply pt-0 mb-4 pl-8;
+  }
+  .link-light {
+    @apply text-light hover:text-secondary hover:underline transition-colors duration-300;
+  }
+  .link-green {
+    @apply text-tertiary-dark hover:text-tertiary hover:underline transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .card {
+    @apply text-center bg-light border border-tertiary rounded-lg w-[85%] p-[1.75rem] transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105;
+    @screen sm {
+      @apply w-[200] p-4;
+    }
+  }
+  .image-card {
+    @apply inline object-cover rounded-full mb-4 w-[200] h-[200] text-center;
+    @screen sm {
+      @apply w-[140] h-[140];
+    }
+  }
+  .title-card {
+    @apply my-2 text-2xl font-bold text-tertiary;
+  }
+  .subtitle-card {
+    @apply text-sm text-tertiary-dark;
+  }
+  .btn {
+    @apply inline-block text-center align-middle cursor-pointer
+           select-none border border-transparent rounded-md
+           text-base font-normal leading-6 px-3 py-4 bg-primary
+           transition-colors transition-shadow duration-150 ease-in-out;
+  }
+
+  .btn-primary {
+    @apply text-white bg-primary border border-primary
+           hover:text-white hover:bg-[#7136d0] hover:border-[#6a33c4]
+           disabled:text-white disabled:bg-primary disabled:border-primary
+           active:text-white active:bg-[#6a33c4] active:border-[#6430b8];
+  }
+  .btn-secondary {
+    @apply text-black bg-secondary border border-secondary
+           hover:text-black hover:bg-[#e5d6fc] hover:border-[#e3d4fc]
+           disabled:text-black disabled:bg-secondary disabled:border-secondary
+           active:text-black active:bg-[#e6d9fd] active:border-[#e3d4fc];
+  }
+
+  .alert {
+    @apply bg-transparent relative px-4 py-14 mb-4 border border-[#ffe69c] rounded-md text-[#664d03] bg-[#fff3cd];
+  }
+
+  .alert-warning {
+    @apply text-[#664d03] bg-[#fff3cd] border-[#ffe69c];
+  }
+}

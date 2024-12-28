@@ -1,27 +1,67 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jornadas de Seguridad - Página principal" />
+    <title>Jornadas de Seguridad - Inicio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  <body
+    class="font-sans flex flex-col bg-quaternary text-tertiary min-h-screen text-base font-normal m-0 text-start">
+    <include
+      src="./views/header.html"
+      locals='{
+      "bgColor": "bg-primary",
+      "textColor": "text-secondary",
+      "link": "link-light"
+  }'></include>
+
+    <main class="flex flex-col flex-1">
+      <section class="text-light bg-primary p-4 @container">
+        <div
+          class="flex flex-col align-center gap-4 items-center supports-[display:grid]:grid supports-[display:grid]:grid-cols-1 supports-[display:grid]:text-center md:supports-[display:grid]:grid-cols-[2fr_1fr] supports-[display:grid]:[grid-template-areas:'image''content''cta'] md:supports-[display:grid]:[grid-template-areas:'image_content''image_cta']">
+          <div class="[grid-area:image]">
+            <include
+              src="./views/figure.html"
+              locals='{
+              "src": "./assets/images/poster.avif",
+              "alt": "Imagen representativa de seguridad informática",
+              "author": "Unsplash"
+            }'></include>
+          </div>
+          <div class="[grid-area:content] p-4">
+            <h1>Jornadas de Seguridad Informática</h1>
+            <p>
+              Apúntate a las jornadas de seguridad más importantes del año.
+              Aprenderás conceptos muy importantes de los mejores profesionales
+              del sector.
+            </p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-center gap-2 [grid-area:cta]">
+            <a href="./speakers.html">
+              <button class="btn btn-primary">Mira los conferenciantes</button>
+            </a>
+            <a href="./speakers.html">
+              <button class="btn btn-secondary">Más Información</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <include
+      src="./views/footer.html"
+      locals='{
+      "bgColor": "bg-tertiary/10",
+      "textColor": "text-tertiary",
+      "link": "link-green"
+  }'></include>
   </body>
 </html>
