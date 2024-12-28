@@ -1,6 +1,6 @@
 @layer base {
   * {
-    box-sizing: border-box;
+    @apply box-border;
   }
   img,
   svg {
