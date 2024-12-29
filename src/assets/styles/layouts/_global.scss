@@ -10,7 +10,7 @@
   h1 {
     font-size: calc(1.375rem + 1.5vw);
     @screen xl {
-      font-size: 2.5rem;
+      @apply text-[2.5rem];
     }
   }
   h6,
