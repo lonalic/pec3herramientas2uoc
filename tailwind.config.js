@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm': '576px'
+        sm: "576px",
+        xl: "1200px",
       },
       colors: {
         // Taken from https://getbootstrap.com/docs/5.0/customize/color/
@@ -39,7 +40,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/container-queries'),
-  ],
+  plugins: [require("@tailwindcss/container-queries")],
 }
